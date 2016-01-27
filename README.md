@@ -1,2 +1,1 @@
-# grails_jenkins_job_dsl_sample
-Sample project for jenkins job DSL Plugin and Grails 3
+# Sample project for [Jenkins Job DSL Plugin](https://github.com/jenkinsci/job-dsl-plugin/wiki) and Grails 3

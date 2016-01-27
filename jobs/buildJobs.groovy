@@ -12,21 +12,16 @@ job("$basePath/grails_build") {
         github repo
     }
     triggers {
-        scm 'H/5 * * * *'
+        scm '*/2 * * * *'
     }
     steps {
         grails {
             useWrapper false
             nonInteractive true
             name 'grails-3.0.12'
-            targets(['test-app -unit'])
-        }
-        grails {
-            useWrapper false
-            nonInteractive true
-            name 'grails-3.0.12'
             serverPort '8881'
-            targets(['test-app -integration'])
+            target 'test-app'
+            target 'package'
         }
     }
 }
