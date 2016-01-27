@@ -2,7 +2,7 @@
 String basePath = 'grails_jenkins_job_dsl_sample'
 String repo = 'marhan/grails_jenkins_job_dsl_sample'
 
-job('seed') {
+job('Grails Jenkins Job DSL Seed') {
     scm {
         github repo
     }
