@@ -15,7 +15,9 @@ job("$basePath/grails_build") {
         scm 'H/5 * * * *'
     }
     steps {
-        grails {            
+        grails {
+            useWrapper false
+            name 'grails-3.0.12'
             targets(['test-app', 'war'])
         }
     }
