@@ -26,7 +26,7 @@ listView('Seed Jobs') {
     filterBuildQueue()
     filterExecutors()
     jobs {
-        regex(/.*seedJob.*/)
+        regex(/.*seed.*/)
     }
     columns {
         status()
