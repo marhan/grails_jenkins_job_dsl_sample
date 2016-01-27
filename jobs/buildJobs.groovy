@@ -17,8 +17,9 @@ job("$basePath/grails_build") {
     steps {
         grails {
             useWrapper false
+            nonInteractive true
             name 'grails-3.0.12'
-            targets(['test-app', 'war'])
+            targets(['test-app', 'package'])
         }
     }
 }
