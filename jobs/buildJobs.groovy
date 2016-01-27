@@ -19,7 +19,14 @@ job("$basePath/grails_build") {
             useWrapper false
             nonInteractive true
             name 'grails-3.0.12'
-            targets(['test-app', 'package'])
+            targets(['test-app -unit'])
+        }
+        grails {
+            useWrapper false
+            nonInteractive true
+            name 'grails-3.0.12'
+            serverPort '8881'
+            targets(['test-app -integration'])
         }
     }
 }
