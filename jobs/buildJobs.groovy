@@ -21,7 +21,7 @@ job("$basePath/grails_build") {
             name 'grails-3.0.12'
             serverPort '8881'
             target 'test-app'
-            target 'package'
+            target 'war'
         }
     }
 }
