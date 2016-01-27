@@ -6,8 +6,8 @@ job('seed') {
     scm {
         github repo
     }
-    triggers {        
-        githubPush
+    triggers {
+        scm 'H/1 * * * *'
     }
     steps {
         gradle 'clean test'

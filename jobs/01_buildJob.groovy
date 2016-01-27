@@ -16,7 +16,7 @@ job("$basePath/grails_test") {
         github repo
     }
     triggers {
-        scm '*/2 * * * *'
+        scm 'H/5 * * * *'
     }
     steps {
         grails {
@@ -40,7 +40,7 @@ job("$basePath/grails_build") {
         github repo
     }
     triggers {
-        scm '*/2 * * * *'
+        scm 'H/5 * * * *'
     }
     steps {
         grails {
@@ -52,7 +52,7 @@ job("$basePath/grails_build") {
     }
 }
 
-job("$basePath/grails-deploy") {    
+job("$basePath/grails-deploy") {
     steps {
         shell 'scp war file; restart...'
     }
